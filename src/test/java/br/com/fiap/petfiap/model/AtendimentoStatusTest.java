@@ -25,4 +25,15 @@ public class AtendimentoStatusTest {
         assertThrows(StatusInvalidoException.class, banho::cancelar);
         assertEquals("CONCLUIDO", banho.getStatus());
     }
+
+    @Test
+    public void deveRecusarConclusaoQuandoAtendimentoCancelado() {
+        // Arrange
+        Banho banho = banhoDoRex();
+        banho.cancelar();
+
+        // Act + Assert: atendimento cancelado nao pode ser concluido
+        assertThrows(StatusInvalidoException.class, banho::concluir);
+        assertEquals("CANCELADO", banho.getStatus());
+    }
 }
