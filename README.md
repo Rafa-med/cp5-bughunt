@@ -1,15 +1,17 @@
 # Checkpoint 5 — Bug Hunt PetFiap
 
-## Identificação
+## Membros
 
-**Grupo:** ___ (PREENCHER)
 
-| Integrante | RM | Turma |
-|---|---|---|
-| (PREENCHER) | | |
-| (PREENCHER) | | |
-| (PREENCHER) | | |
-| (PREENCHER) | | |
+**Turma:** 2CCPY
+
+| Integrante | RM |
+|---|---|
+| Rafael de Medeiros Cordeiro | 562167 |
+| Taysir Fauzi Ali | 564884 |
+| Caique Baptistella de Vicente Albertino | 564747 |
+| Mateus Francisco Comim Magalhaes | 562119 |
+| Carlos Augusto Pires da Silva | 564927 |
 
 | Campo | |
 |---|---|
@@ -83,7 +85,7 @@ Dos 6 testes novos, 4 ficaram vermelhos (preço do banho, duração da tosa, can
 
 ---
 
-## Parte 5 — Espaço livre (opcional)
+## Parte 5 — Adicional 
 
 ```
 Os bugs foram numerados na ordem em que foram encontrados: bug01 a bug07 vieram dos
