@@ -27,9 +27,9 @@ public class AgendaService {
             throw new IllegalArgumentException("Data/hora do agendamento deve ser no futuro");
         }
         List<Atendimento> doPet = repository.findByPetNome(novo.getPetNome());
-        for (Atendimento a : doPet) {
-            if (a.getPetNome().equals(novo.getPetNome()) && a.getDataHora().equals(novo.getDataHora())
-                    && Atendimento.STATUS_AGENDADO.equals(a.getStatus())) {
+        for (Atendimento existente : doPet) {
+            if (existente.getPetNome().equals(novo.getPetNome()) && existente.getDataHora().equals(novo.getDataHora())
+                    && Atendimento.STATUS_AGENDADO.equals(existente.getStatus())) {
                 throw new HorarioOcupadoException(
                         "Pet " + novo.getPetNome() + " ja possui atendimento agendado nesse horario");
             }
